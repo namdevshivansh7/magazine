@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>DailySphere Magazine</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+ *{margin:0;padding:0;box-sizing:border-box;}
+ body{
+ font-family: Arial, Helvetica, sans-serif;
+ background:#f3f4f6;
+ color:#111827;
+ }
+ header{
+ background:#111827;
+ color:#fff;
+ padding:10px 20px;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ flex-wrap:wrap;
+ }
+ .logo{font-weight:bold;font-size:18px;}
+ nav a{
+ color:#e5e7eb;
+ text-decoration:none;
+ margin-left:15px;
+ font-size:14px;
+ }
+ nav a:hover{color:#fff;}
+ .top-bar{
+ background:#f97316;
+ color:#fff;
+ padding:6px 20px;
+ font-size:12px;
+ }
+ .hero{
+ padding:20px;
+ display:flex;
+ flex-wrap:wrap;
+ gap:20px;
+ max-width:1100px;
+ margin:0 auto;
+ }
+ .featured-main{
+ flex:2 1 280px;
+ background:#ffffff;
+ border-radius:6px;
+ box-shadow:0 2px 6px rgba(0,0,0,0.08);
+ overflow:hidden;
+ }
+ .featured-main img{
+ width:100%;
+ height:220px;
+ object-fit:cover;
+ display:block;
+ }
+ .featured-main-content{
+ padding:12px;
+ }
+ .featured-main-content h1{
+ font-size:20px;
+ margin-bottom:6px;
+ }
+ .featured-main-content p{
+ font-size:13px;
+ color:#4b5563;
+ margin-bottom:6px;
+ }
+ .meta{
+ font-size:11px;
+ color:#6b7280;
+ margin-bottom:4px;
+ }
+ .featured-side{
+ flex:1 1 220px;
+ display:flex;
+ flex-direction:column;
+ gap:10px;
+ }
+ .side-article{
+ background:#ffffff;
+ border-radius:6px;
+ box-shadow:0 2px 6px rgba(0,0,0,0.08);
+ padding:8px 10px;
+ font-size:13px;
+ }
+ .side-article strong{display:block;margin-bottom:2px;}
+ .side-article span{font-size:11px;color:#6b7280;}
+ main{
+ max-width:1100px;
+ margin:10px auto 0;
+ display:grid;
+ grid-template-columns:2fr 1fr;
+ gap:15px;
+ padding:0 20px 20px;
+ }
+ section h2{
+ font-size:18px;
+ margin-bottom:8px;
+ border-left:4px solid #f97316;
+ padding-left:6px;
+ color:#111827;
+ }
+ section p{
+ font-size:13px;
+ margin-bottom:8px;
+ color:#374151;
+ }
+ .article-list{
+ display:flex;
+ flex-wrap:wrap;
+ gap:10px;
+ margin-top:8px;
+ }
+ .article-card{
+ flex:1 1 230px;
+ min-width:230px;
+ background:#fff;
+ border-radius:6px;
+ box-shadow:0 2px 6px rgba(0,0,0,0.05);
+ padding:8px 10px;
+ font-size:13px;
+ }
+ .article-card h3{font-size:14px;margin-bottom:4px;}
+ .tag{
+ display:inline-block;
+ padding:2px 6px;
+ font-size:11px;
+ border-radius:999px;
+ background:#fee2e2;
+ color:#b91c1c;
+ margin-bottom:4px;
+ }
+ aside{
+ font-size:13px;
+ }
+ .sidebar-block{
+ background:#fff;
+ border-radius:6px;
+ box-shadow:0 2px 6px rgba(0,0,0,0.05);
+ padding:10px;
+ margin-bottom:10px;
+ }
+ .sidebar-block h3{
+ font-size:15px;
+ margin-bottom:6px;
+ }
+ .sidebar-block ul{
+ list-style:none;
+ }
+ .sidebar-block li{
+ margin-bottom:4px;
+ }
+ .sidebar-block li a{
+ text-decoration:none;
+ color:#111827;
+ font-size:13px;
+ }
+ .sidebar-block li a:hover{color:#f97316;}
+ .newsletter p{
+ font-size:12px;
+ margin-bottom:6px;
+ }
+ .newsletter input{
+ width:100%;
+ padding:6px;
+ border-radius:4px;
+ border:1px solid #d1d5db;
+ font-size:13px;
+ margin-bottom:6px;
+ }
+ .newsletter button{
+ width:100%;
+ padding:7px;
+ border:none;
+ border-radius:4px;
+ background:#111827;
+ color:#fff;
+ font-size:13px;
+ cursor:pointer;
+ }
+ footer{
+ background:#111827;
+ color:#9ca3af;
+ text-align:center;
+ padding:10px;
+ font-size:12px;
+ margin-top:10px;
+ }
+ @media(max-width:800px){
+ main{grid-template-columns:1fr;}
+ }
+ @media(max-width:600px){
+ header{justify-content:center;gap:8px;}
+ nav{width:100%;text-align:center;}
+ nav a{margin:0 8px;}
+ .hero{padding-inline:10px;}
+ main{padding-inline:10px;}
+ }
+ </style>
+</head>
+<body>
+ <!-- Top bar -->
+ <div class="top-bar">
+ Breaking: New tech regulations announced for 2026 • Stay updated with
+DailySphere Weekly Brief. [web:105]
+ </div>
+ <!-- Header -->
+ <header>
+ <div class="logo">DailySphere</div>
+ <nav>
+ <a href="#top-news">Top News</a>
+ <a href="#tech">Tech</a>
+ <a href="#sports">Sports</a>
+ <a href="#lifestyle">Lifestyle</a>
+ <a href="#subscribe">Subscribe</a>
+ </nav>
+ </header>
+ <!-- Featured area -->
+ <section class="hero" id="top-news">
+ <article class="featured-main">
+ <img src="https://theplanetd.com/images/city-skylines-of-the-world-brisbane.jpg">
+ <div class="featured-main-content">
+ <div class="meta">World • Updated 5 min ago</div>
+ <h1>Global cities race to build greener, smarter infrastructure.</h1>
+ <p>
+ Governments aur startups milkar public transport, clean energy aur smart
+traffic systems pe
+ tez kaam kar rahe hain, jisse pollution kam aur quality of life better ho sake.
+[web:111]
+ </p>
+ </div>
+ </article>
+ <div class="featured-side">
+ <article class="side-article">
+ <strong>AI tools reshape classroom learning for students.</strong>
+ <span>Tech • 15 min ago</span>
+ </article>
+ <article class="side-article">
+ <strong>Local football club qualifies for national finals.</strong>
+ <span>Sports • 30 min ago</span>
+ </article>
+ <article class="side-article">
+ <strong>Simple habits that improve sleep quality in 7 days.</strong>
+ <span>Lifestyle • 1 hr ago</span>
+ </article>
+ </div>
+ </section>
+ <!-- Main layout -->
+ <main>
+ <!-- Left: topic sections -->
+ <div>
+ <!-- Tech -->
+ <section id="tech">
+ <h2>Technology</h2>
+ <p>Tech section me latest gadgets, startups aur digital policy updates cover
+kiye jaate hain. [web:101]</p>
+ <div class="article-list">
+ <article class="article-card">
+ <span class="tag">Gadgets</span>
+ <h3>Next‑gen smartphones focus on battery life over camera
+megapixels.</h3>
+ <p class="meta">2 hours ago • by Editorial Desk</p>
+ <p>Manufacturers ab all‑day usage aur fast‑charging pe zyada dhyaan de
+rahe hain.</p>
+ </article>
+ <article class="article-card">
+ <span class="tag">Startups</span>
+ <h3>Indian health‑tech startup uses AI to detect diseases earlier.</h3>
+ <p class="meta">3 hours ago • by Staff Writer</p>
+ <p>Rural clinics me simple phone camera se basic screening possible ho
+raha hai.</p>
+ </article>
+ </div>
+ </section>
+ <!-- Sports -->
+ <section id="sports">
+ <h2>Sports</h2>
+ <p>Sports section me local se le kar international matches tak quick highlights
+milte hain. [web:101]</p>
+ <div class="article-list">
+ <article class="article-card">
+ <span class="tag">Cricket</span>
+ <h3>Last‑over thriller: home team wins by 2 runs in final match.</h3>
+ <p class="meta">1 hour ago • Stadium Report</p>
+ <p>Chasing side ko last 6 balls par 10 runs chahiye the, lekin bowling side
+ne comeback kiya.</p>
+ </article>
+ <article class="article-card">
+ <span class="tag">Football</span>
+ <h3>Young striker scores hat‑trick in debut league game.</h3>
+ <p class="meta">4 hours ago • Sports Desk</p>
+ <p>Club fans social media par naye player ko next star keh rahe hain.</p>
+ </article>
+ </div>
+ </section>
+ <!-- Lifestyle -->
+ <section id="lifestyle">
+ <h2>Lifestyle</h2>
+ <p>Nutrition, travel, work‑life balance aur productivity tips is section me cover
+hote hain. [web:105]</p>
+ <div class="article-list">
+ <article class="article-card">
+ <span class="tag">Health</span>
+ <h3>5 simple desk stretches for people who sit all day.</h3>
+ <p class="meta">Today • Wellness</p>
+ <p>Short breaks aur light movement se back pain aur fatigue kam ho sakti
+hai.</p>
+ </article>
+ <article class="article-card">
+ <span class="tag">Travel</span>
+ <h3>Budget‑friendly weekend trips you can plan under ₹5,000.</h3>
+ <p class="meta">Yesterday • Travel Notes</p>
+ <p>Nearby hills, old forts aur coastal towns ke liye short itinerary ideas.</p>
+ </article>
+ </div>
+ </section>
+ </div>
+ <!-- Right: sidebar (subscription + trending) -->
+ <aside id="subscribe">
+ <!-- Newsletter -->
+ <div class="sidebar-block newsletter">
+ <h3>Subscribe to DailySphere</h3>
+ <p>Weekly summary direct inbox me – top stories, explainers aur featured
+opinions. [web:109][web:118]</p>
+ <input type="text" id="subName" placeholder="Your name">
+ <input type="email" id="subEmail" placeholder="Email address">
+ <button id="subBtn">Subscribe (Demo)</button>
+ <p class="mini-text" style="font-size:11px;color:#6b7280;margin-top:4px;">
+ Note: Ye sirf frontend demo form hai, real email service connect nahi hai.
+ </p>
+ </div>
+ <!-- Trending topics -->
+ <div class="sidebar-block">
+ <h3>Trending Topics</h3>
+ <ul>
+ <li><a href="#tech">AI in everyday apps</a></li>
+ <li><a href="#sports">Domestic league finals</a></li>
+ <li><a href="#lifestyle">Minimalist lifestyle</a></li>
+ <li><a href="#tech">Data privacy rules</a></li>
+ </ul>
+ </div>
+ <!-- Small about block -->
+ <div class="sidebar-block">
+ <h3>About DailySphere</h3>
+ <p style="font-size:12px;color:#4b5563;">
+ DailySphere ek online magazine hai jo tech, sports, lifestyle aur opinion pieces
+ko clean,
+ distraction‑free layout me present karta hai. [web:102]
+ </p>
+ </div>
+ </aside>
+ </main>
+ <footer>
+ © 2025 DailySphere Magazine • Contact: editor@dailysphere.com • All stories are
+for demo / project use only
+ </footer>
+ <script>
+ // Smooth scroll
+ function scrollToId(id){
+ const el = document.getElementById(id);
+ if(el){ el.scrollIntoView({behavior:"smooth"}); }
+ }
+ // Navbar smooth scroll
+ document.querySelectorAll("nav a").forEach(link=>{
+ link.addEventListener("click",function(e){
+ const href = this.getAttribute("href");
+ if(href && href.startsWith("#")){
+ e.preventDefault();
+ scrollToId(href.substring(1));
+ }
+ });
+ });
+ // Subscription (demo)
+ const subBtn = document.getElementById("subBtn");
+ subBtn.addEventListener("click", ()=>{
+ const name = document.getElementById("subName").value.trim();
+ const email = document.getElementById("subEmail").value.trim();
+ if(!email){
+ alert("Please enter your email to subscribe.");
+ return;
+ }
+ alert("Thank you" + (name ? ", " + name : "") + "! You are subscribed to
+DailySphere Weekly (demo only).");
+ document.getElementById("subName").value = "";
+ document.getElementById("subEmail").value = "";
+ });
+ </script>
+</body>
+</html>
